@@ -15,7 +15,26 @@ const root = ReactDOM.createRoot(el);
 
 // 4) Create a component
 function App() {
-    return <h1>Hi there!</h1>;
+    let message = 'Bye there!';
+    if (Math.random() > 0.5) {
+        message = 'Hello there!';
+    }
+    const date = new Date();
+    const time = date.toLocaleTimeString();
+
+    const name = 'Andrea';
+    const age = '20';
+
+    return (
+        <div>
+            <h1>{message}</h1>
+            <h1>{time}</h1>
+            <h1>{new Date().toLocaleTimeString()}</h1>  {/* SHORTHAND */}
+            <h1>
+                My name is {name} and I'm {age}
+            </h1>
+        </div>
+    );
 }
 
 // 5) Show the component on the screen
