@@ -15,26 +15,61 @@ const root = ReactDOM.createRoot(el);
 
 // 4) Create a component
 function App() {
-    let message = 'Bye there!';
-    if (Math.random() > 0.5) {
-        message = 'Hello there!';
-    }
-    const date = new Date();
-    const time = date.toLocaleTimeString();
+    // let message = 'Bye there!';
+    // if (Math.random() > 0.5) {
+    //     message = 'Hello there!';
+    // }
+    // const date = new Date();
+    // const time = date.toLocaleTimeString();
 
-    const name = 'Andrea';
-    const age = '20';
+    // const name = 'Andrea';
+    // const age = '20';
 
-    return (
-        <div>
-            <h1>{message}</h1>
-            <h1>{time}</h1>
-            <h1>{new Date().toLocaleTimeString()}</h1>  {/* SHORTHAND */}
-            <h1>
-                My name is {name} and I'm {age}
-            </h1>
-        </div>
-    );
+    // return (
+    //     <div>
+    //         <h1>{message}</h1>
+    //         <h1>{time}</h1>
+    //         <h1>{new Date().toLocaleTimeString()}</h1>  {/* SHORTHAND */}
+    //         <h1>
+    //             My name is {name} and I'm {age}
+    //         </h1>
+    //     </div>
+    // );
+
+    // return <input type="number" min={5} max={10} />;
+
+    // const inputType = 'number';
+    // const minValue = 5;
+    // const maxValue = 10;
+    // return <input type={inputType} min={minValue} max={maxValue} style={{ border: '3px solid red' }} />;
+    
+    // return <textarea autoFocus={true} />;
+
+    // return <input maxLength={5} />
+
+    // return <input spellCheck />
+
+    // return <input spellCheck={false} />
+
+    // return <li className='item'>Ciao</li>
+
+    // return <input style={{ border: '1px solid blue' }} />
+
+    // return (
+    //     <input placeholder="hi there" />  
+    // );
+
+    // return (
+    //     <div className="wrapper">
+    //       <textarea
+    //         readOnly
+    //         maxLength={3}
+    //         spellCheck
+    //         style={{backgroundColor: 'gray'}}
+    //       />
+    //     </div>
+    //   );
+
 }
 
 // 5) Show the component on the screen
